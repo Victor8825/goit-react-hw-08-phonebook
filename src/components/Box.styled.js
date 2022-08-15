@@ -14,7 +14,8 @@ import {
 export const Box = styled.div(
   {
     display: 'flex',
-    // justifyContent: 'center',
+    flexDirection: 'column',
+    gridGap: '10px',
     alignItems: 'center',
   },
   color,
