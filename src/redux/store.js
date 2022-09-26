@@ -15,7 +15,7 @@ import contactsReducer from './contactsSlice';
 const persistConfig = {
   key: 'root',
   storage,
-  whitelist: ['items'],
+  whitelist: ['contacts'],
 };
 
 const persistedReducer = persistReducer(persistConfig, contactsReducer);
@@ -31,5 +31,4 @@ const store = configureStore({
 });
 
 export const persistor = persistStore(store);
-console.log(persistor);
 export default store;
