@@ -3,11 +3,12 @@ import { createSlice } from '@reduxjs/toolkit';
 const contactsInitialState = {
   contacts: {
     items: [],
+    filter: '',
   },
 };
 
 const contactsSlice = createSlice({
-  name: 'items',
+  name: 'phonebook',
   initialState: contactsInitialState,
   reducers: {
     addContact: {
@@ -17,6 +18,7 @@ const contactsSlice = createSlice({
         }
         state.contacts.items.push(payload);
       },
+
       prepare: ({ id, name, number }) => {
         return {
           payload: {
@@ -27,13 +29,18 @@ const contactsSlice = createSlice({
         };
       },
     },
+
     deleteContact: (state, { payload }) => {
       state.contacts.items = state.contacts.items.filter(
         ({ id }) => id !== payload
       );
     },
+
+    setFilter: (state, { payload }) => {
+      state.contacts.filter = payload;
+    },
   },
 });
 
-export const { addContact, deleteContact } = contactsSlice.actions;
+export const { addContact, deleteContact, setFilter } = contactsSlice.actions;
 export default contactsSlice.reducer;
