@@ -4,7 +4,7 @@ export const GlobalStyle = createGlobalStyle`
 body {
   margin: ${p => p.theme.space[0]}px;
   padding: ${p => p.theme.space[5]}px;
-  background-color: #fff;
+  background-color: ${p => p.theme.colors.background};
   color: #2a2a2a;
   line-height: 1.3;
   font-family: ${p => p.theme.fonts.body};
