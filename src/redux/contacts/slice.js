@@ -12,13 +12,13 @@ const handleAddContact = (state, action) => {
 
 const handleDeleteContact = (state, action) => {
   const idx = state.contacts.items.findIndex(
-    item => item.id === action.payload.id
+    item => item.id === action.meta.arg
   );
   state.contacts.items.splice(idx, 1);
 };
 
 const contactsSlice = createSlice({
-  name: 'phonebook',
+  name: 'contacts',
   initialState: {
     contacts: {
       items: [],

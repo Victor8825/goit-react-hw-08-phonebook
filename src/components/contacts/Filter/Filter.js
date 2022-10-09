@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyledFilter } from './StyledFilter';
 import { useDispatch } from 'react-redux';
-import { setFilter } from '../../redux/contactsSlice';
+import { setFilter } from '../../../redux/contacts/slice';
 
 export const Filter = () => {
   const dispatch = useDispatch();
