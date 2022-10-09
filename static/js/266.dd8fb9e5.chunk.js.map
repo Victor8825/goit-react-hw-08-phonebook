@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/266.dd8fb9e5.chunk.js","mappings":"iKAQA,UARa,WACX,OACE,+BACE,uDAGL,C","sources":["pages/Home.js"],"sourcesContent":["const Home = () => {\n  return (\n    <>\n      <h1>Contacts App welcome page</h1>\n    </>\n  );\n};\n\nexport default Home;\n"],"names":[],"sourceRoot":""}
