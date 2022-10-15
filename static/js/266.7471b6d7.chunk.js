@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgoit_react_hw_08_phonebook=self.webpackChunkgoit_react_hw_08_phonebook||[]).push([[266],{1266:function(e,n,o){o.r(n);var t=o(4565),c=o(184);n.default=function(){return(0,c.jsx)(t.Z,{variant:"h1",component:"h1",align:"center",mt:4,color:"secondary",children:"Contacts App welcome page"})}}}]);
+//# sourceMappingURL=266.7471b6d7.chunk.js.map
