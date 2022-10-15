@@ -12,7 +12,7 @@ const handleAddContact = (state, action) => {
 
 const handleDeleteContact = (state, action) => {
   const idx = state.contacts.items.findIndex(
-    item => item.id === action.meta.arg
+    item => item.id === action.payload
   );
   state.contacts.items.splice(idx, 1);
 };
